@@ -14,13 +14,11 @@ for (let question of questions) {
     }
 
     if (question.id !== clickedId) {
-      console.log("IF");
       this.children[0].classList.add("bold-font");
       this.children[1].style.transform = "rotateX(180deg)";
       details[question.id].classList.remove("hide");
       clickedId = question.id;
     } else {
-      console.log("ELSE");
       this.children[0].classList.remove("bold-font");
       details[question.id].classList.add("hide");
       clickedId = null;
